@@ -102,6 +102,7 @@ body {
   font-size: calc((20 / 16) * 1rem);
   line-height: 1.5;
   color: #5f574e;
+  display: inline-block;
 }
 
 .preparation-list-item span {
