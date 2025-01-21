@@ -30,7 +30,7 @@ body {
   height: auto;
 }
 
-/* MAIN INFO CONTAINER */
+/* MAIN INFO CONTAINER------------------------------------ */
 .recipe-info-container {
   padding: calc((40 / 16) * 1rem) /* top */ calc((32 / 16) * 1rem) /* right */
     calc((40 / 16) * 1rem) /* bottom */ calc((32 / 16) * 1rem); /* left */
@@ -40,7 +40,7 @@ body {
   gap: calc((32 / 16) * 1rem);
 }
 
-/* TITLE */
+/* TITLE---------------------------------------------------- */
 .title-container {
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ body {
   color: #5f574e;
 }
 
-/* PREPARATION */
+/* PREPARATION---------------------------------------------------------- */
 .preparation-container {
   background-color: #fff5fa;
   padding: calc((24 / 16) * 1rem);
@@ -85,13 +85,13 @@ body {
     calc((8 / 16) * 1rem) calc((16 / 16) * 1rem) calc((16 / 16) * 1rem)
     auto;
 
-  grid-template-rows: auto calc((8 / 16) * 1rem) auto calc((8 / 16) * 1rem);
+  grid-template-rows: auto calc((8 / 16) * 1rem) auto calc((8 / 16) * 1rem) auto;
   align-items: center;
 }
 
 .dot-style {
   color: #7b284f;
-  font-size: calc((6 / 16) * 1rem);
+  font-size: calc((5 / 16) * 1rem);
 }
 
 .dot-style-item1 {
@@ -109,6 +109,16 @@ body {
   grid-row: 5;
 }
 
+.dot-style-item4 {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.dot-style-item5 {
+  grid-column: 2;
+  grid-row: 9;
+}
+
 .preparation-list-item {
   font-size: calc((16 / 16) * 1rem);
   line-height: 1.5;
@@ -119,58 +129,294 @@ body {
   font-weight: 700;
 }
 
-.prep-list-item1 {
+.prep-list-item1,
+.ing-list-item1 {
   grid-column: 4;
   grid-row: 1;
 }
 
-.prep-list-item2 {
+.prep-list-item2,
+.ing-list-item2 {
   grid-column: 4;
   grid-row: 3;
 }
 
-.prep-list-item3 {
+.prep-list-item3,
+.ing-list-item3 {
   grid-column: 4;
   grid-row: 5;
 }
 
-/* INGREDIENTS */
+/* INGREDIENTS---------------------------------- */
 .ingredients-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc((24 / 16) * 1rem);
 }
 
 .ingredients-title {
+  font-family: "Young Serif", Georgia, serif;
+  font-size: calc((28 / 16) * 1rem);
+  line-height: 1;
+
+  color: #7b284f;
 }
 
 .ingredients-list {
+  display: grid;
+  grid-template-columns:
+    calc((8 / 16) * 1rem) calc((16 / 16) * 1rem) calc((16 / 16) * 1rem)
+    auto;
+
+  grid-template-rows:
+    auto calc((8 / 16) * 1rem) auto calc((8 / 16) * 1rem) auto calc(
+      (8 / 16) * 1rem
+    )
+    auto calc((8 / 16) * 1rem) auto;
+  align-items: center;
 }
 
 .ingredients-list-item {
+  font-size: calc((16 / 16) * 1rem);
+  line-height: 1.5;
+  color: #5f574e;
 }
 
+.ing-list-item4 {
+  grid-column: 4;
+  grid-row: 7;
+}
+
+.ing-list-item5 {
+  grid-column: 4;
+  grid-row: 9;
+}
+
+/* GREY LINE */
+.grey-line {
+  border-top: 1px solid #e4ded8;
+}
+
+/* INSTRUCTIONS */
 .instructions-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc((24 / 16) * 1rem);
 }
 
 .instructions-title {
+  font-family: "Young Serif", Georgia, serif;
+  font-size: calc((28 / 16) * 1rem);
+  line-height: 1;
+
+  color: #854632;
 }
 
 .instructions-list {
+  display: grid;
+  grid-template-columns:
+    calc((8 / 16) * 1rem) calc((16 / 16) * 1rem) calc((16 / 16) * 1rem)
+    auto;
+
+  grid-template-rows:
+    auto calc((8 / 16) * 1rem) auto calc((8 / 16) * 1rem) auto calc(
+      (8 / 16) * 1rem
+    )
+    auto calc((8 / 16) * 1rem) auto calc((8 / 16) * 1rem) auto;
 }
 
-.instructions-list-item {
+.instrct-number {
+  font-size: calc((16 / 16) * 1rem);
+  font-weight: 700;
+  line-height: 1.5;
+  color: #854632;
 }
+
+.instrct-text {
+  font-size: calc((16 / 16) * 1rem);
+  line-height: 1.5;
+  color: #5f574e;
+}
+
+.instrct-text span {
+  font-weight: 700;
+}
+
+.instrct-number-item1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.instrct-text-item1 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.instrct-number-item2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.instrct-text-item2 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.instrct-number-item3 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.instrct-text-item3 {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.instrct-number-item4 {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.instrct-text-item4 {
+  grid-column: 4;
+  grid-row: 7;
+}
+
+.instrct-number-item5 {
+  grid-column: 2;
+  grid-row: 9;
+}
+
+.instrct-text-item5 {
+  grid-column: 4;
+  grid-row: 9;
+}
+
+.instrct-number-item6 {
+  grid-column: 2;
+  grid-row: 11;
+}
+
+.instrct-text-item6 {
+  grid-column: 4;
+  grid-row: 11;
+}
+
+/* NUTRITION INFO */
 
 .nutrition-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc((24 / 16) * 1rem);
 }
 
 .nutrition-title {
+  font-family: "Young Serif", Georgia, serif;
+  font-size: calc((28 / 16) * 1rem);
+  line-height: 1;
+
+  color: #854632;
 }
 
 .nutrition-text {
+  font-size: calc((16 / 16) * 1rem);
+  line-height: 1.5;
+
+  color: #5f574e;
 }
 
 .nutrition-table {
+  /* display: flex;
+  gap: calc((16 / 16) * 1rem);
+  padding-left: calc((32 / 16) * 1rem);
+  padding-right: calc((32 / 16) * 1rem); */
+  display: grid;
+  grid-template-columns: calc((32 / 16) * 1rem) auto calc((16 / 16) * 1rem) auto calc(
+      (32 / 16) * 1rem
+    );
+
+  grid-template-rows:
+    auto calc((12 / 16) * 1rem) auto calc((12 / 16) * 1rem) auto calc(
+      (12 / 16) * 1rem
+    )
+    auto calc((12 / 16) * 1rem) auto calc((12 / 16) * 1rem) auto calc(
+      (12 / 16) * 1rem
+    )
+    auto;
 }
 
+.nutri-col1 {
+  font-size: calc((16 / 16) * 1rem);
+  line-height: 1.5;
+
+  color: #5f574e;
+}
+
+.nutri-col1-item1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.nutri-col1-item2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.nutri-col1-item3 {
+  grid-column: 2;
+  grid-row: 9;
+}
+
+.nutri-col1-item4 {
+  grid-column: 2;
+  grid-row: 13;
+}
+
+.nutri-col2 {
+  font-size: calc((16 / 16) * 1rem);
+  font-weight: 700;
+  line-height: 1.5;
+
+  color: #854632;
+}
+
+.nutri-col2-item1 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.nutri-col2-item2 {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.nutri-col2-item3 {
+  grid-column: 4;
+  grid-row: 9;
+}
+
+.nutri-col2-item4 {
+  grid-column: 4;
+  grid-row: 13;
+}
+
+.nutri-table-line1 {
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.nutri-table-line2 {
+  grid-row: 7;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.nutri-table-line3 {
+  grid-row: 11;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
 /* FOOTER-------------------------------------------- */
 .attribution {
   font-size: calc((11 / 16) * 1rem);
