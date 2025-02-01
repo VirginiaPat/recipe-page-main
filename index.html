@@ -36,7 +36,6 @@
 
     <link rel="stylesheet" href="css/css-reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/queries.css" />
 
     <title>Recipe page</title>
   </head>
@@ -67,91 +66,26 @@
           <div class="preparation-container">
             <h2 class="preparation-title">Preparation time</h2>
 
-            <div class="grid-4cols grid-5rows">
-              <div class="dot-style col2-row1">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row1">
-                <span>Total:</span> Approximately 10 minutes
-              </p>
-
-              <div class="dot-style col2-row3">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row3">
-                <span>Preparation:</span> 5 minutes
-              </p>
-
-              <div class="dot-style col2-row5">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row5">
-                <span>Cooking:</span> 5 minutes
-              </p>
-            </div>
+            <ul class="text16px-Stone600">
+              <li><span>Total:</span> Approximately 10 minutes</li>
+              <li><span>Preparation:</span> 5 minutes</li>
+              <li><span>Cooking:</span> 5 minutes</li>
+            </ul>
           </div>
 
           <!-- INGREDIENTS -->
           <div class="flex-container">
             <h2 class="ingredients-title">Ingredients</h2>
-            <div class="grid-4cols grid-9rows">
-              <div class="dot-style col2-row1">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row1">2-3 large eggs</p>
-              <div class="dot-style col2-row3">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row3">Salt, to taste</p>
-              <div class="dot-style col2-row5">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row5">Pepper, to taste</p>
-              <div class="dot-style col2-row7">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row7">
-                1 tablespoon of butter or oil
-              </p>
-              <div class="dot-style col2-row9">
-                <ion-icon
-                  name="ellipse"
-                  aria-label="Dot indicator"
-                  role="img"
-                ></ion-icon>
-              </div>
-              <p class="text16px-Stone600 col4-row9">
+
+            <ul class="text16px-Stone600">
+              <li>2-3 large eggs</li>
+              <li>Salt, to taste</li>
+              <li>Pepper, to taste</li>
+              <li>1 tablespoon of butter or oil</li>
+              <li>
                 Optional fillings: cheese, diced vegetables, cooked meats, herbs
-              </p>
-            </div>
+              </li>
+            </ul>
           </div>
 
           <!-- GREY LINE -->
@@ -161,47 +95,36 @@
           <div class="flex-container">
             <h2 class="instructions-title">Instructions</h2>
 
-            <div class="grid-4cols grid-11rows">
-              <p class="instrct-number col2-row1">1.</p>
-              <p class="text16px-Stone600 col4-row1">
+            <ol class="text16px-Stone600">
+              <li>
                 <span>Beat the eggs:</span> In a bowl, beat the eggs with a
                 pinch of salt and pepper until they are well mixed. You can add
                 a tablespoon of water or milk for a fluffier texture.
-              </p>
-
-              <p class="instrct-number col2-row3">2.</p>
-              <p class="text16px-Stone600 col4-row3">
+              </li>
+              <li>
                 <span>Heat the pan:</span> Place a non-stick frying pan over
                 medium heat and add butter or oil.
-              </p>
-
-              <p class="instrct-number col2-row5">3.</p>
-              <p class="text16px-Stone600 col4-row5">
+              </li>
+              <li>
                 <span>Cook the omelette:</span> Once the butter is melted and
                 bubbling, pour in the eggs. Tilt the pan to ensure the eggs
                 evenly coat the surface.
-              </p>
-
-              <p class="instrct-number col2-row7">4.</p>
-              <p class="text16px-Stone600 col4-row7">
+              </li>
+              <li>
                 <span>Add fillings (optional):</span> When the eggs begin to set
                 at the edges but are still slightly runny in the middle,
                 sprinkle your chosen fillings over one half of the omelette.
-              </p>
-
-              <p class="instrct-number col2-row9">5.</p>
-              <p class="text16px-Stone600 col4-row9">
+              </li>
+              <li>
                 <span>Fold and serve:</span> As the omelette continues to cook,
                 carefully lift one edge and fold it over the fillings. Let it
                 cook for another minute, then slide it onto a plate.
-              </p>
-
-              <p class="instrct-number col2-row11">6.</p>
-              <p class="text16px-Stone600 col4-row11">
+              </li>
+              <li>
                 <span>Enjoy:</span> Serve hot, with additional salt and pepper
                 if needed.
-              </p>
-            </div>
+              </li>
+            </ol>
           </div>
 
           <!-- GREY LINE -->
@@ -215,22 +138,24 @@
               additional fillings.
             </p>
 
-            <div class="nutrition-table">
-              <p class="text16px-Stone600 col2-row1">Calories</p>
-              <p class="nutri-col2 col4-row1">277kcal</p>
-              <div class="grey-line nutri-table-line1"></div>
-
-              <p class="text16px-Stone600 col2-row5">Carbs</p>
-              <p class="nutri-col2 col4-row5">0g</p>
-              <div class="grey-line nutri-table-line2"></div>
-
-              <p class="text16px-Stone600 col2-row9">Protein</p>
-              <p class="nutri-col2 col4-row9">20g</p>
-              <div class="grey-line nutri-table-line3"></div>
-
-              <p class="text16px-Stone600 col2-row13">Fat</p>
-              <p class="nutri-col2 col4-row13">22g</p>
-            </div>
+            <table class="text16px-Stone600">
+              <tr>
+                <td class="tb-col1">Calories</td>
+                <td class="tb-col2"><span>277kcal</span></td>
+              </tr>
+              <tr>
+                <td class="tb-col1">Carbs</td>
+                <td class="tb-col2"><span>0g</span></td>
+              </tr>
+              <tr>
+                <td class="tb-col1">Protein</td>
+                <td class="tb-col2"><span>20g</span></td>
+              </tr>
+              <tr>
+                <td class="tb-col1">Fat</td>
+                <td class="tb-col2"><span>22g</span></td>
+              </tr>
+            </table>
           </div>
         </div>
       </article>

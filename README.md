@@ -30,9 +30,7 @@ Recipe page challenge build with HTML and CSS.
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ## Author
@@ -42,3 +40,5 @@ Recipe page challenge build with HTML and CSS.
 - Netlify - [VirginiaPat](https://app.netlify.com/teams/virginia-patrika/sites)
 
 ## Acknowledgments
+
+Special thanks to Kamran Kiani [@kaamiik](https://www.frontendmentor.io/profile/kaamiik) for his feedback.
