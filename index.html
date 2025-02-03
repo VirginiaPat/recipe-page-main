@@ -42,7 +42,8 @@
 
   <body>
     <main>
-      <article aria-labelledby="recipe-title" class="recipe-container">
+      <article aria-labelledby="recipe-name" class="recipe-container">
+        <h2 id="recipe-name" class="visually-hidden">Omelete recipe</h2>
         <!-- IMAGE -->
         <img
           class="recipe-img"
@@ -51,31 +52,40 @@
         />
 
         <!--MAIN INFO CONTAINER  -->
-        <div class="recipe-info-container">
-          <!-- TITLE -->
-          <div class="flex-container">
+        <section
+          aria-labelledby="recipe-information-container"
+          class="recipe-info-container"
+        >
+          <h2 id="recipe-information-container" class="visually-hidden">
+            What you need and how to make a sipmle omelete
+          </h2>
+          <!-- TITLE and DESCRIPTION -->
+          <section aria-labelledby="recipe-title" class="flex-container">
             <h1 id="recipe-title">Simple Omelette Recipe</h1>
             <p class="text16px-Stone600">
               An easy and quick dish, perfect for any meal. This classic
               omelette combines beaten eggs cooked to perfection, optionally
               filled with your choice of cheese, vegetables, or meats.
             </p>
-          </div>
+          </section>
 
           <!-- PREPARATION -->
-          <div class="preparation-container">
-            <h2 class="preparation-title">Preparation time</h2>
+          <section
+            aria-labelledby="preparation-title"
+            class="preparation-container"
+          >
+            <h2 id="preparation-title">Preparation time</h2>
 
             <ul class="text16px-Stone600">
               <li><span>Total:</span> Approximately 10 minutes</li>
               <li><span>Preparation:</span> 5 minutes</li>
               <li><span>Cooking:</span> 5 minutes</li>
             </ul>
-          </div>
+          </section>
 
           <!-- INGREDIENTS -->
-          <div class="flex-container">
-            <h2 class="ingredients-title">Ingredients</h2>
+          <section aria-labelledby="ingredients-title" class="flex-container">
+            <h2 id="ingredients-title">Ingredients</h2>
 
             <ul class="text16px-Stone600">
               <li>2-3 large eggs</li>
@@ -86,14 +96,14 @@
                 Optional fillings: cheese, diced vegetables, cooked meats, herbs
               </li>
             </ul>
-          </div>
+          </section>
 
           <!-- GREY LINE -->
-          <div class="grey-line"></div>
+          <hr />
 
           <!-- INSTRUCTIONS -->
-          <div class="flex-container">
-            <h2 class="instructions-title">Instructions</h2>
+          <section aria-labelledby="instructions-title" class="flex-container">
+            <h2 id="instructions-title">Instructions</h2>
 
             <ol class="text16px-Stone600">
               <li>
@@ -125,14 +135,14 @@
                 if needed.
               </li>
             </ol>
-          </div>
+          </section>
 
           <!-- GREY LINE -->
-          <div class="grey-line"></div>
+          <hr />
 
           <!-- NUTRITION -->
-          <div class="flex-container">
-            <h2 class="nutrition-title">Nutrition</h2>
+          <section aria-labelledby="nutrition-title" class="flex-container">
+            <h2 id="nutrition-title">Nutrition</h2>
             <p class="text16px-Stone600">
               The table below shows nutritional values per serving without the
               additional fillings.
@@ -156,8 +166,8 @@
                 <td class="tb-col2"><span>22g</span></td>
               </tr>
             </table>
-          </div>
-        </div>
+          </section>
+        </section>
       </article>
     </main>
     <footer>
